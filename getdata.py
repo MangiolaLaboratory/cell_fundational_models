@@ -45,9 +45,3 @@ import pandas as pd
 # Assuming you have a DataFrame called 'df'
 adata_c = ad.AnnData(cell_metadata)
 adata_c.write_h5ad("my_data.h5ad")
-
-# Make sure you have git-lfs installed (https://git-lfs.com)
-git lfs install
-git clone https://huggingface.co/ctheodoris/Geneformer
-cd Geneformer
-pip install .
