@@ -46,7 +46,7 @@ cells <-
             revised_at = revised_at |> as.character()) |>
   select(-run_from_cell_id,-x_approximate_distribution) |>
   get_single_cell_experiment()
-cells |> writeH5AD()
+
 
 # remove run_from_cell_id and x_aproximate_distribution and change published at and revised character to char to remove NaN
 cells <- cells |> mutate(published_at = published_at |> as.character(),
